@@ -112,7 +112,7 @@ body {
 .article-open {
   height: 400px;
 }
-.articles {
+.flash {
   animation: disco 500ms infinite;
 }
 @keyframes disco {
