@@ -11,3 +11,26 @@ html, body {
   font-family: 'Roboto';
   background-color: #fffef7;
 }
+
+// Importing menu.js
+@import '../Menu/Menu.less';
+
+// Importing article.less
+@import '../Article/Article.less';
+
+// Additional stuff below ------------------>
+
+.flash {
+  .animation-strobe();
+}
+
+.animation-strobe () {
+  animation: disco 500ms infinite;
+
+  @keyframes disco {
+    0% { background: red; box-shadow: 0 0 -10px red; }
+    40% { background: blue; box-shadow: 0 0 20px blue; }
+    60% { background: purple; box-shadow: 0 0 20px purple; }
+    100% { background: aqua; box-shadow: 0 0 -10px aqua; }
+  }
+}
